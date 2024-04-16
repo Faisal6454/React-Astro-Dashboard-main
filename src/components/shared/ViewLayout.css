@@ -1,0 +1,63 @@
+.View-Layout-Container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.View-Layout-Box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.View-Layout-Outlet {
+    display: flex;
+    flex: 1;
+    padding: 10px 0 0 0 ;
+    min-height: 0;
+    overflow: auto;
+    border: 2px rgb(0, 153, 255);
+
+}
+
+
+/* ViewSideBar-2 CSS */
+
+.Viewsidebar2 {
+    width: 298px;
+    /* height: 591.5px; */
+    margin-top: 40px;
+    padding: 8px;
+    background-color: #78C3F9;
+
+}
+
+.Line-1 {
+    margin-top: 80px;
+    padding: 10px;
+}
+
+.Line {
+    color: #000000;
+}
+
+.Line-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.Line-2-popup {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: #000000;
+    background-color: #F8B114;
+    top: -1px;
+    text-align: center;
+}
+
+/* ViewSideBar-2 CSS End */

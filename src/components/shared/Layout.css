@@ -1,0 +1,22 @@
+.Layout-Container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.Layout-Box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Layout-Outlet {
+    flex: 1;
+    padding: 8px;
+    min-height: 0;
+    overflow: auto;
+    border: 2px rgb(0, 153, 255);
+
+}

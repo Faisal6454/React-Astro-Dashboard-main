@@ -1,0 +1,157 @@
+/* Sidebar  */
+#viewsidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    grid-area: sidebar;
+    width: 7%;
+    height: 100%;
+    background-color: #209AF3;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .viewsidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 30px;
+  }
+  
+  .viewsidebar-title > span {
+    display: none;
+  }
+  
+  .viewsidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .viewsidebar-list {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .viewsidebar-list-item {
+    padding: 10px 10px 20px 18px;
+    font-size: 16px;
+    margin: 8px
+  }
+  
+  /* .viewsidebar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  } */
+  
+  .viewsidebar-list-item > a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #View-a1 {
+    width: 100px;
+    height: 10px;
+    background-color: #D0165D;
+  }
+  #View-a2 {
+    width: 100px;
+    height: 10px;
+    background-color: #344293;
+  }
+  #View-a4 {
+    width: 100px;
+    height: 10px;
+    background-color: #344293; 
+  }
+  #viewa4 .popup {
+    display: inline-flex;
+    flex-basis: initial;
+    align-items: center; 
+    justify-content: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 18px;
+    border-radius: 100%;
+    color: #000000;
+    background-color: #F8B114;
+}
+
+.viewbottom-logo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  color: #ffffff;
+  background-color: #6D5BD0;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewchat-logo .popup2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  color: #000000;
+  background-color: #F8B114;
+  top: -1px;
+  text-align: center;
+}
+
+  
+  .viewsidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    /*
+      we want the z-index of the sidebar higher so that
+      the charts are not showing over the sidebar 
+      on small screens
+    */
+    z-index: 12 !important;
+  }
+  
+
+
+  @media screen and (max-width: 992px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 3fr;
+      grid-template-areas:
+        'header'
+        'main';
+    }
+  
+    #viewsidebar {
+      display: none;
+    }
+  
+    .viewmenu-icon {
+      display: inline;
+    }
+  
+    .viewsidebar-title > span {
+      display: inline;
+    }
+
+    .viewbottom-logo {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      color: #ffffff;
+      background-color: #6D5BD0;
+      bottom: 10%;
+      left: 35%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  /* End Sidebar  */

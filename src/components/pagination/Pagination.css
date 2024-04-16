@@ -1,0 +1,32 @@
+.Pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    gap: 12px;
+}
+
+.Pagination button {
+    display: flex;
+    margin-right: 4px;
+    padding: 2px 2px 2px 2px;
+    background-color: #dcdfe367;
+    border-radius: 100%;
+}
+
+.Pagination button:disabled {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 576px) {
+    .Pagination {
+        display: none;
+    }
+    .Pagination button {
+        display: none;
+    }
+}
+
+/* top Y padding is 25px
+right X padding is 50px
+bottom Y padding is 75px
+left X padding is 100px */
